@@ -113,7 +113,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = ({
                 )}
               </ColoredIconButton>
             )}
-            <ColoredIconButton
+            {/* <ColoredIconButton
               variant="light"
               scale="sm"
               onClick={() => {
@@ -138,7 +138,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = ({
                   {tooltipVisible && (!isMobile || mobileTooltipShow) && tooltip}
                 </>
               )}
-            </ColoredIconButton>
+            </ColoredIconButton> */}
             <NotificationDot show={expertMode}>
               <GlobalSettings color="primary" mr="0" mode={SettingsMode.SWAP_LIQUIDITY} />
             </NotificationDot>
