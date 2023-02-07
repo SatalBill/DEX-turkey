@@ -192,7 +192,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
           </BodyWrapper>
         </Wrapper>
       </AtomBox>
-      <Footer
+      {/* <Footer
         items={footerLinks}
         isDark={isDark}
         toggleTheme={toggleTheme}
@@ -203,7 +203,15 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         buyCakeLabel={buyCakeLabel}
         buyCakeLink={buyCakeLink}
         mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
-      />
+      /> */}
+      <Box bg="#0a182a" width="100%" height={60} display="flex" padding="0 71px" style={{justifyContent: 'space-between', alignItems: 'center'}}>
+        <span>© 2022 swap.xyz</span>
+        <div style={{display: 'flex', gap: 30, alignItems: 'center'}}>
+        <span>Условия эксплуатации</span>
+        <span>Политика конфиденциальности</span>
+        </div>
+
+      </Box>
       <AtomBox display={{ xs: "block", md: "none" }}>
         <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />
       </AtomBox>
