@@ -45,13 +45,17 @@ const StyledLink = styled("a")`
 const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const { linkComponent } = useContext(MenuContext);
   const isAbsoluteUrl = href.startsWith("http");
+  // const innerLogo = (
+  //   <>
+  //     <LogoIcon className="mobile-icon" />
+  //     <LogoWithTextIcon className="desktop-icon" />
+  //   </>
+  // );
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" />
+      <img src="/images/logo.png" style={{height: 75}} />
     </>
   );
-
   return (
     <Flex alignItems="center">
       {isAbsoluteUrl ? (
