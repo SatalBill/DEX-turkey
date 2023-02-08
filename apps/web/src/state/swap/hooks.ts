@@ -198,7 +198,7 @@ export function queryParametersToSwapState(
   let outputCurrency =
     typeof parsedQs.outputCurrency === 'string'
       ? isAddress(parsedQs.outputCurrency) || nativeSymbol
-      : defaultOutputCurrency ?? DEFAULT_OUTPUT_CURRENCY
+      : DEFAULT_OUTPUT_CURRENCY
   if (inputCurrency === outputCurrency) {
     if (typeof parsedQs.outputCurrency === 'string') {
       inputCurrency = ''
