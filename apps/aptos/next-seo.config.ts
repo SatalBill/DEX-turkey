@@ -4,7 +4,7 @@ export const SEO: DefaultSeoProps = {
   titleTemplate: '%s | Turkswap',
   defaultTitle: 'Turkswap',
   description:
-    'The most popular AMM DEX for Russian on BSC is now! Swap your favorite tokens instantly. ',
+    'The most popular AMM DEX for Turks on BSC is now! Swap your favorite tokens instantly. ',
   // twitter: {
   //   cardType: 'summary_large_image',
   //   handle: '@PancakeSwap',
