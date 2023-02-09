@@ -12,7 +12,7 @@ export const StyledPriceChart = styled(Box)<{
   padding-top: 36px;
   ${({ theme }) => theme.mediaQueries.sm} {
     padding-top: 8px;
-    background: ${({ $isDark }) => ($isDark ? '#0b1a2c' : '#0b1a2c')};
+    background: ${({ $isDark }) => ($isDark ? '#edeaed' : '#edeaed')};
     border: ${({ theme }) => `1px solid ${theme.colors.cardBorder}`};
     border-radius: ${({ $isExpanded }) => ($isExpanded ? '0' : '16px')};
     width: ${({ $isExpanded, $isFullWidthContainer }) => ($isFullWidthContainer || $isExpanded ? '100%' : '50%')};

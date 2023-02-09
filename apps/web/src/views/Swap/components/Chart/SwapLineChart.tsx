@@ -15,8 +15,8 @@ export type SwapLineChartProps = {
 
 const getChartColors = ({ isChangePositive }) => {
   return isChangePositive
-    ? { gradient1: '#2669D0', gradient2: 'rgba(38, 96, 208, 0)', stroke: '#2660D0' }
-    : { gradient1: '#2669D0', gradient2: 'rgba(38, 96, 208, 0)', stroke: '#2660D0 ' }
+    ? { gradient1: '#E20917', gradient2: '#CE2930', stroke: '#E20917' }
+    : { gradient1: '#E20917', gradient2: '#CE2930', stroke: '#E20917 ' }
 }
 
 const dateFormattingByTimewindow: Record<PairDataTimeWindowEnum, Intl.DateTimeFormatOptions> = {

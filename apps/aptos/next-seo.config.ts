@@ -1,8 +1,8 @@
 import { DefaultSeoProps } from 'next-seo'
 
 export const SEO: DefaultSeoProps = {
-  titleTemplate: '%s | Ruswap',
-  defaultTitle: 'Ruswap',
+  titleTemplate: '%s | Turkswap',
+  defaultTitle: 'Turkswap',
   description:
     'The most popular AMM DEX for Russian on BSC is now! Swap your favorite tokens instantly. ',
   // twitter: {

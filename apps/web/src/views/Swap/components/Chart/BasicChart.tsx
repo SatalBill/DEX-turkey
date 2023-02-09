@@ -84,11 +84,11 @@ const BasicChart = ({
             inputSymbol={inputCurrency?.symbol}
             outputSymbol={outputCurrency?.symbol}
           >
-            <Text color={isChangePositive ? '#2660D0' : 'failure'} fontSize="14px" ml="4px" bold>
+            <Text color={isChangePositive ? '#e20917' : 'failure'} fontSize="14px" ml="4px" bold>
               {`${isChangePositive ? '+' : ''}${changeValue.toFixed(3)} (${changePercentage}%)`}
             </Text>
           </PairPriceDisplay>
-          <Text small color="#2660D0">
+          <Text small color="#e20917">
             {hoverDate || currentDate}
           </Text>
         </Flex>
