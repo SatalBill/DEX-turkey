@@ -5,7 +5,7 @@ import memoize from 'lodash/memoize'
 import omitBy from 'lodash/omitBy'
 import reduce from 'lodash/reduce'
 import isUndefinedOrNull from '@pancakeswap/utils/isUndefinedOrNull'
-import { EN, languages, RU } from './config/languages'
+import { EN, languages, TR } from './config/languages'
 import { ContextApi, ProviderState, TranslateFunction } from './types'
 import { LS_KEY, fetchLocale, getLanguageCodeFromLS } from './helpers'
 
@@ -34,7 +34,7 @@ export const LanguageProvider: React.FC<React.PropsWithChildren> = ({ children }
   const { lastUpdated, setLastUpdated: refresh } = useLastUpdated()
   const [state, setState] = useState<ProviderState>(() => {
     // const codeFromStorage = getLanguageCodeFromLS()
-    const codeFromStorage = RU.locale
+    const codeFromStorage = TR.locale
     return {
       ...initialState,
       currentLanguage: languages[codeFromStorage] || EN,
@@ -45,7 +45,7 @@ export const LanguageProvider: React.FC<React.PropsWithChildren> = ({ children }
   useEffect(() => {
     const fetchInitialLocales = async () => {
       // const codeFromStorage = getLanguageCodeFromLS()
-      const codeFromStorage = RU.locale
+      const codeFromStorage = TR.locale
 
       if (codeFromStorage !== EN.locale) {
         const currentLocale = await fetchLocale(codeFromStorage)
