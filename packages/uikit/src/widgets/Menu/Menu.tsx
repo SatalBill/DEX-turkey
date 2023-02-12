@@ -136,7 +136,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
       <AtomBox
         asChild
         minHeight={{
-          xs: "auto",
+          xs: "100vh",
           md: "100vh",
         }}
       >
@@ -204,7 +204,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         buyCakeLink={buyCakeLink}
         mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
       /> */}
-      <Box bg="#fff" width="100%" height={60} display="flex" padding="0 71px" style={{justifyContent: 'space-between', alignItems: 'center'}}>
+      <Box bg="#fff" width="100%" height={60} display="flex" padding="0 71px" style={{justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto'}}>
         <span style={{color: '#121127'}}>©2023 Turkswap</span>
         <div style={{display: 'flex', gap: 30, alignItems: 'center'}}>
         <span style={{color: '#121127'}}>Kullanım Şartları</span>
@@ -212,9 +212,9 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         </div>
 
       </Box>
-      <AtomBox display={{ xs: "block", md: "none" }}>
+      {/* <AtomBox display={{ xs: "block", md: "none" }}>
         <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />
-      </AtomBox>
+      </AtomBox> */}
     </MenuContext.Provider>
   );
 };
