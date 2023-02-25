@@ -53,7 +53,7 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   // );
   const innerLogo = (
     <>
-      <img src={"/images/logo.svg?" + Math.random()} style={{height: 75}} />
+      <img src={"/images/logo.svg"} style={{height: 75}} />
     </>
   );
   return (
